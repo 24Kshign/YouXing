@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--自定义圆形头像-->
+    <declare-styleable name="roundedimageview">
+        <!--定义图片的属性：边框宽度-->
+        <attr name="border_thickness" format="dimension" />
+        <!--定义图片的属性：边内颜色-->
+        <attr name="border_inside_color" format="color" />
+        <!--定义图片的属性：边外颜色-->
+        <attr name="border_outside_color" format="color" />
+    </declare-styleable>
+
+    <!--声音震动的开关-->
+    <declare-styleable name="SwitchButton">
+        <attr name="bmWidth" format="dimension"></attr>
+        <attr name="bmHeight" format="dimension"></attr>
+    </declare-styleable>
+
+    <!--listview左滑删除-->
+    <declare-styleable name="swipelistviewstyle">
+        <attr name="right_width" format="dimension"></attr>
+    </declare-styleable>
+
+    <!--自定义省市区选择器-->
+    <declare-styleable name="NumberPicker">
+        <attr name="normalTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selecredTextColor" format="color" />
+        <attr name="selecredTextSize" format="dimension" />
+        <attr name="unitHight" format="dimension" />
+        <attr name="itemNumber" format="integer"/>
+        <attr name="lineColor" format="color" />
+        <attr name="maskHight" format="dimension"/>
+        <attr name="noEmpty" format="boolean"/>
+        <attr name="isEnable" format="boolean"/>
+    </declare-styleable>
+</resources>

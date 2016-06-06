@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height55"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/height12"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/imtb_rv_all"
+            android:layout_width="match_parent"
+            android:background="@drawable/fm_rv_all_bg_pressed"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/imtb_tv_all"
+                android:layout_width="wrap_content"
+                android:text="全部"
+                android:textSize="@dimen/height16"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imtb_rv_food"
+        android:layout_width="0dp"
+        android:layout_weight="1.2"
+        android:padding="@dimen/height4"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imtb_iv_food"
+            android:layout_width="36dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/fm_iv_food"
+            android:layout_height="36dp" />
+
+        <TextView
+            android:id="@+id/imtb_tv_food"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="美食天地"
+            android:layout_toRightOf="@+id/imtb_iv_food"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imtb_rv_rest"
+        android:layout_width="0dp"
+        android:padding="@dimen/height4"
+        android:layout_weight="1.2"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imtb_iv_rest"
+            android:layout_width="36dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/fm_iv_rest"
+            android:layout_height="36dp" />
+
+        <TextView
+            android:id="@+id/imtb_tv_rest"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="休憩小馆"
+            android:layout_toRightOf="@+id/imtb_iv_rest"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imtb_rv_footprint"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/height4"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imtb_iv_footprint"
+            android:layout_width="36dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/fm_iv_footprint"
+            android:layout_height="36dp" />
+
+        <TextView
+            android:id="@+id/imtb_tv_footprint"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="足迹"
+            android:layout_toRightOf="@+id/imtb_iv_footprint"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

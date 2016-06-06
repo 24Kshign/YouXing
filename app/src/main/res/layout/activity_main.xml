@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:id="@+id/am_fl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height0"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/am_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/height4"
+        android:background="@color/colorLine" />
+
+    <LinearLayout
+        android:id="@+id/am_lv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height55"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/am_rv_shop"
+            android:layout_width="@dimen/height0"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/am_iv_shop"
+                    android:layout_width="@dimen/height36"
+                    android:layout_height="@dimen/height36"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/am_iv_shop_normal" />
+
+                <TextView
+                    android:id="@+id/am_tv_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/am_iv_shop"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/shop"
+                    android:textSize="@dimen/height12" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/am_rv_meet"
+            android:layout_width="@dimen/height0"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/am_iv_meet"
+                    android:layout_width="@dimen/height36"
+                    android:layout_height="@dimen/height36"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/am_iv_meet_normal" />
+
+                <TextView
+                    android:id="@+id/am_tv_meet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/am_iv_meet"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/meet"
+                    android:textSize="@dimen/height12" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/am_rv_publish"
+            android:layout_width="@dimen/height0"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/am_iv_publish"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/am_iv_publish" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/am_rv_messege"
+            android:layout_width="@dimen/height0"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/am_iv_messege"
+                    android:layout_width="@dimen/height36"
+                    android:layout_height="@dimen/height36"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/am_iv_messege_normal" />
+
+                <TextView
+                    android:id="@+id/am_unread_msg_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/height10"
+                    android:background="@drawable/unread_count_bg"
+                    android:gravity="center"
+                    android:text="7"
+                    android:visibility="gone"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/height12" />
+
+                <TextView
+                    android:id="@+id/am_tv_messege"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/am_iv_messege"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/messege"
+                    android:textSize="@dimen/height12" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/am_rv_personal"
+            android:layout_width="@dimen/height0"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/am_iv_personal"
+                    android:layout_width="@dimen/height36"
+                    android:layout_height="@dimen/height36"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/am_iv_personal_normal" />
+
+                <TextView
+                    android:id="@+id/am_tv_personal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/am_iv_personal"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/personal"
+                    android:textSize="@dimen/height12" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

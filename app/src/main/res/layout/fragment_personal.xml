@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/fp_include"
+        layout="@layout/layout_title_bar" />
+
+
+    <com.share.jack.widget.MyDampScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fp_include"
+        android:fillViewport="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height170"
+                android:layout_below="@+id/fp_include"
+                android:background="@mipmap/fp_iv_bg">
+
+                <com.share.jack.widget.RoundImageView
+                    android:id="@+id/fp_riv_head"
+                    android:layout_width="@dimen/height120"
+                    android:layout_height="@dimen/height120"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/default_avatar" />
+
+                <ImageView
+                    android:id="@+id/fp_iv_head"
+                    android:layout_width="@dimen/height120"
+                    android:layout_height="@dimen/height120"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/default_avatar"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fp_rv_not_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/height30"
+                android:visibility="visible">
+
+                <include layout="@layout/layout_not_login" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fp_lv_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height50"
+                    android:paddingLeft="24dp">
+
+                    <ImageView
+                        android:id="@+id/fp_iv_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/fp_iv_man" />
+
+                    <TextView
+                        android:id="@+id/fp_tv_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="我若成风"
+                        android:textSize="@dimen/height18"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLine" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height50"
+                    android:paddingLeft="24dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/fp_iv_location" />
+
+                    <TextView
+                        android:id="@+id/fp_tv_location_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="杭州"
+                        android:textSize="@dimen/height18"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLine" />
+
+                <RelativeLayout
+                    android:id="@+id/fp_rv_been_gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height50"
+                    android:background="@drawable/rv_bg"
+                    android:paddingLeft="@dimen/height24"
+                    android:paddingRight="@dimen/height20">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/fp_iv_been_gone" />
+
+                    <TextView
+                        android:id="@+id/fp_tv_bean_gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="去过"
+                        android:textSize="@dimen/height18"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/fp_iv_next" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/fp_lv_image_of_been_gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorLine" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height100"
+                        android:paddingBottom="@dimen/height8"
+                        android:paddingLeft="@dimen/height8"
+                        android:paddingRight="@dimen/height8"
+                        android:paddingTop="@dimen/height8">
+
+                        <ImageView
+                            android:id="@+id/fp_iv_been_gone_image1"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:id="@+id/fp_iv_been_gone_image2"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLine" />
+
+                <RelativeLayout
+                    android:id="@+id/fp_rv_want_go"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height50"
+                    android:background="@drawable/rv_bg"
+                    android:paddingLeft="@dimen/height24"
+                    android:paddingRight="@dimen/height20">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/fp_iv_want_go" />
+
+                    <TextView
+                        android:id="@+id/fp_tv_want_go"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="想去"
+                        android:textSize="@dimen/height18"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/fp_iv_next" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/fp_lv_image_of_want_go"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorLine" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height100"
+                        android:paddingBottom="@dimen/height8"
+                        android:paddingLeft="@dimen/height8"
+                        android:paddingRight="@dimen/height8"
+                        android:paddingTop="@dimen/height8">
+
+                        <ImageView
+                            android:id="@+id/fp_iv_want_go_image1"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:id="@+id/fp_iv_want_go_image2"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLine" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.share.jack.widget.MyDampScrollView>
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aa_rv_main"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/aa_include"
+        layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/aa_lv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/aa_view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/black" />
+
+        <include layout="@layout/layout_comment" />
+    </LinearLayout>
+
+    <com.share.jack.widget.MyScrollView
+        android:id="@+id/aa_sv_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/aa_lv_bottom"
+        android:layout_below="@+id/aa_include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height60"
+                android:padding="@dimen/height8">
+
+                <ImageView
+                    android:id="@+id/aa_iv_head"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_centerVertical="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/height10"
+                    android:layout_toRightOf="@+id/aa_iv_head"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/aa_tv_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/height18"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/aa_tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/aa_tv_read_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/height10"
+                            android:drawableLeft="@mipmap/aa_iv_browse"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/aa_iv_main_pic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height180" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height8"
+                android:background="@color/btnLoginGreenNormal" />
+
+
+            <TextView
+                android:id="@+id/aa_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height8"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/height20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/aa_tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/height12"
+                android:textSize="@dimen/height18" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height60"
+                android:paddingLeft="@dimen/height16"
+                android:paddingRight="@dimen/height16">
+
+                <Button
+                    android:id="@+id/aa_btn_go"
+                    android:layout_width="@dimen/height60"
+                    android:layout_height="@dimen/height36"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_go"
+                    android:text="GO"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/height18"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/aa_iv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/fp_iv_location" />
+
+                <TextView
+                    android:id="@+id/aa_tv_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/aa_btn_go"
+                    android:layout_toRightOf="@+id/aa_iv_location"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/height8"
+                    android:paddingRight="@dimen/height20"
+                    android:singleLine="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height24"
+                android:background="@color/top_frame"
+                android:paddingLeft="@dimen/height16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <com.share.jack.widget.MyNoScrollListView
+                android:id="@+id/aa_listview"
+                android:layout_width="match_parent"
+                android:transcriptMode="normal"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </com.share.jack.widget.MyScrollView>
+</RelativeLayout>

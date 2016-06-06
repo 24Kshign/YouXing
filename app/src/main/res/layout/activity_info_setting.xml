@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ais_lv_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/ais_include"
+        layout="@layout/layout_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ais_include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ais_rv_set_head"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height120"
+                android:layout_marginTop="@dimen/height28">
+
+                <com.share.jack.widget.RoundImageView
+                    android:id="@+id/ais_riv_head"
+                    android:layout_width="@dimen/height120"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="点击修改头像"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/height14" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height40"
+                android:layout_marginTop="@dimen/height28"
+                android:paddingLeft="@dimen/height60"
+                android:paddingRight="@dimen/height100">
+
+                <ImageView
+                    android:id="@+id/ais_iv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/fp_iv_man" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/ais_iv_nickname"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/height4"
+                    android:paddingLeft="@dimen/height4">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorLine" />
+
+                    <TextView
+                        android:id="@+id/ais_tv_nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="我若成风"
+                        android:textSize="@dimen/height20" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height40"
+                android:layout_marginTop="@dimen/height20"
+                android:paddingLeft="@dimen/height60"
+                android:paddingRight="@dimen/height100">
+
+                <ImageView
+                    android:id="@+id/ais_iv_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ais_iv_gender" />
+
+                <RelativeLayout
+                    android:id="@+id/ais_rv_set_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/ais_iv_gender"
+                    android:paddingBottom="@dimen/height4"
+                    android:paddingLeft="@dimen/height4">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorLine" />
+
+                    <TextView
+                        android:id="@+id/ais_tv_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:gravity="bottom"
+                        android:singleLine="true"
+                        android:text="男"
+                        android:textSize="@dimen/height20" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height40"
+                android:layout_marginTop="@dimen/height20"
+                android:paddingLeft="@dimen/height60"
+                android:paddingRight="@dimen/height100">
+
+                <ImageView
+                    android:id="@+id/ais_iv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/fp_iv_location" />
+
+                <RelativeLayout
+                    android:id="@+id/ais_rv_set_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/ais_iv_location"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/height4"
+                    android:paddingLeft="@dimen/height4">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorLine" />
+
+                    <TextView
+                        android:id="@+id/ais_tv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:gravity="bottom"
+                        android:singleLine="true"
+                        android:text="浙江-杭州"
+                        android:textSize="@dimen/height20" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

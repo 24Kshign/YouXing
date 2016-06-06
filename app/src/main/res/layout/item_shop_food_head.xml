@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/isfh_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height4"
+        android:layout_marginBottom="@dimen/height4"
+        android:text="热门标签"
+        android:textColor="@color/btnLoginGreenNormal"
+        android:textSize="@dimen/height18"
+        android:textStyle="bold" />
+
+</LinearLayout>

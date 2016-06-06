@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/fm_include"
+        layout="@layout/item_meet_title_bar" />
+
+    <View
+        android:id="@+id/fm_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/fm_include"
+        android:background="@color/colorLine" />
+
+
+    <RelativeLayout
+        android:id="@+id/fm_rv_go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLine" />
+
+        <ImageView
+            android:id="@+id/fm_iv_image"
+            android:layout_width="@dimen/height140"
+            android:layout_height="@dimen/height80"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/fm_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height10"
+            android:layout_marginTop="@dimen/height10"
+            android:layout_toRightOf="@+id/fm_iv_image"
+            android:text="杭州乐园"
+            android:textSize="@dimen/height18"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/fm_btn_go"
+            android:layout_width="@dimen/height60"
+            android:layout_height="@dimen/height40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/height10"
+            android:background="@drawable/btn_go"
+            android:text="GO"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/height18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fm_tv_num_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_below="@+id/fm_tv_title"
+            android:layout_toRightOf="@+id/fm_iv_image"
+            android:layout_marginTop="@dimen/height4"
+            android:layout_marginLeft="@dimen/height10"
+            android:singleLine="true"
+            android:text="1123人加入想去清单" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/fm_iv_go"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/fm_tv_num_people"
+            android:layout_toRightOf="@+id/fm_iv_image"
+            android:layout_marginTop="@dimen/height4"
+            android:layout_marginLeft="@dimen/height10"
+            android:text="2.3km" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fm_rv_go"
+        android:layout_below="@+id/fm_view_line">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/fm_mv_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/fm_btn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/height20"
+                android:layout_marginTop="@dimen/height30"
+                android:background="@mipmap/fm_btn_more" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lc_rv_content"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/height50">
+
+        <Button
+            android:id="@+id/aa_btn_send"
+            android:layout_width="@dimen/height60"
+            android:layout_height="@dimen/height40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_go"
+            android:text="发送"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/height18"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/aa_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/aa_btn_send"
+            android:background="@color/colorLine" />
+
+        <Button
+            android:id="@+id/aa_btn_emotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/height4"
+            android:layout_toLeftOf="@+id/aa_btn_send"
+            android:background="@mipmap/ac_btn_express_normal" />
+
+        <EditText
+            android:id="@+id/aa_et_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/aa_view"
+            android:layout_toLeftOf="@+id/aa_btn_emotion"
+            android:background="@null"
+            android:hint="请输入..."
+            android:paddingLeft="@dimen/height8"
+            android:paddingRight="@dimen/height8"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/lc_push_emoj_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/lc_rv_content"
+        android:layout_marginTop="@dimen/height8"
+        android:visibility="gone" />
+
+</LinearLayout>

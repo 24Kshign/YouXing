@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/aa_lv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/height6"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/aa_rv_want_go"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height40"
+            android:layout_weight="1"
+            android:background="@drawable/al_btn_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/aa_iv_want_go"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/aa_iv_add_want_go" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/aa_iv_want_go"
+                android:text="加入想去"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/height12"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/aa_rv_been_gone"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height40"
+            android:layout_marginLeft="@dimen/height6"
+            android:layout_weight="1"
+            android:background="@drawable/al_btn_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/aa_iv_been_gone"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/aa_iv_add_been_gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/aa_iv_been_gone"
+                android:text="加入去过"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/height12"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/aa_rv_praise"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height40"
+            android:layout_marginLeft="@dimen/height6"
+            android:layout_weight="1"
+            android:background="@drawable/al_btn_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/aa_iv_praise"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/aa_iv_praise" />
+
+            <TextView
+                android:id="@+id/aa_tv_praise_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height4"
+                android:layout_toRightOf="@+id/aa_iv_praise"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/height10"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/aa_rv_comment"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height40"
+            android:layout_marginLeft="@dimen/height6"
+            android:layout_weight="1"
+            android:background="@drawable/al_btn_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/aa_iv_comment"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/aa_iv_comment" />
+
+            <TextView
+                android:id="@+id/aa_tv_comment_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height4"
+                android:layout_toRightOf="@+id/aa_iv_comment"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/height10"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_comment_emotions"/>
+
+</LinearLayout>

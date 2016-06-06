@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:layout_marginTop="@dimen/height30"
+        android:paddingLeft="@dimen/height50"
+        android:paddingRight="@dimen/height50">
+
+        <EditText
+            android:id="@+id/asp_et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ar_et_bg"
+            android:hint="@string/please_user_pwd"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/height8"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:layout_marginTop="@dimen/height20"
+        android:paddingLeft="@dimen/height50"
+        android:paddingRight="@dimen/height50">
+
+        <EditText
+            android:id="@+id/asp_et_new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ar_et_bg"
+            android:hint="@string/please_new_user_pwd"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/height8"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height26"
+        android:paddingLeft="@dimen/height50"
+        android:paddingRight="@dimen/height50">
+
+        <Button
+            android:id="@+id/asp_btn_finish"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height44"
+            android:background="@drawable/al_btn_bg"
+            android:enabled="false"
+            android:text="@string/finish"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/height18" />
+
+    </RelativeLayout>
+
+</LinearLayout>

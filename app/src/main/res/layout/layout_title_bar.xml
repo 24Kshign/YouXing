@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height48">
+
+        <RelativeLayout
+            android:id="@+id/ltb_rv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/height22">
+
+            <ImageButton
+                android:id="@+id/ltb_ib_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/ltb_ib_back" />
+
+            <TextView
+                android:id="@+id/ltb_tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/height4"
+                android:layout_toRightOf="@+id/ltb_ib_back"
+                android:textColor="@drawable/text_bg"
+                android:textSize="@dimen/height16" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/ltb_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/height24"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ltb_btn_right"
+            android:layout_width="@dimen/height36"
+            android:layout_height="@dimen/height36"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/height22"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ltb_tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/height22"
+            android:textColor="@drawable/text_bg"
+            android:textSize="@dimen/height16"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLine" />
+
+</LinearLayout>

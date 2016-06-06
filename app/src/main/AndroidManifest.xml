@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.share.jack.swingtravel">
+
+    <!-- 短信验证码的权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 环信的权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 高德地图所需的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <application
+        android:name="com.share.jack.utils.YXApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="03304#youxing" />
+        <!-- 声明sdk所需的service SDK核心功能 -->
+        <service android:name="com.easemob.chat.EMChatService" />
+
+        <!-- 高德地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b8835e8900c0a0f9bcb11b07845facb2" />
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <!-- 动画加载界面 -->
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 登陆界面 -->
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <!-- 注册界面 -->
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <!-- 引导界面，只在第一次安装的时候出现 -->
+        <activity
+            android:name=".GuideActivity"
+            android:screenOrientation="portrait" />
+        <!-- 主界面 -->
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <!-- 忘记密码界面 -->
+        <activity
+            android:name=".ForgetPwdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <!-- 发布界面 -->
+        <activity
+            android:name=".PublishActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <!-- 设置界面 -->
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 资料设置界面 -->
+        <activity
+            android:name=".InfoSettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 消息提示界面 -->
+        <activity
+            android:name=".MessegeTipActivity"
+            android:screenOrientation="portrait" />
+        <!-- 设置密码界面 -->
+        <activity
+            android:name=".SetPwdActivity"
+            android:screenOrientation="portrait" />
+        <!-- 去过界面 -->
+        <activity
+            android:name=".BeenGoneActivity"
+            android:screenOrientation="portrait" />
+        <!-- 想去界面 -->
+        <activity
+            android:name=".WantGoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 文章界面 -->
+        <activity
+            android:name=".ArticleActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 显示自己或者其他人信息界面 -->
+        <activity
+            android:name=".ChatActivity"
+            android:screenOrientation="portrait" />
+        <!-- 显示自己或者其他人信息界面 -->
+        <activity
+            android:name=".MySelfAndOtherActivity"
+            android:screenOrientation="portrait" />
+        <!-- 长按消息显示菜单界面 -->
+        <activity
+            android:name=".ContextMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" />
+        <!-- 互动列表界面 -->
+        <activity
+            android:name=".InteractionListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 评论列表界面 -->
+        <activity
+            android:name=".CommentListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 查看大图界面 -->
+        <activity
+            android:name=".ShowBigImage"
+            android:screenOrientation="portrait" />
+        <!-- 其他人的去过界面-->
+        <activity
+            android:name=".OtherPeopleBeenGoneActivity"
+            android:screenOrientation="portrait" />
+        <!-- 其他人的想去界面-->
+        <activity
+            android:name=".OtherPeopleWantGoActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 短信验证码的Activity -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <receiver android:name=".NetWorkChangeBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

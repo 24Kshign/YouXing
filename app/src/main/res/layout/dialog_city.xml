@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <com.share.jack.widget.CityPicker
+            android:id="@+id/dc_cp_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:id="@+id/dc_rv_finish"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:layout_below="@+id/dc_cp_city">
+
+            <View
+                android:id="@+id/dc_view_top"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine" />
+
+            <TextView
+                android:id="@+id/dc_tv_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/height40"
+                android:text="@string/finish"
+                android:textColor="@drawable/text_bg"
+                android:textSize="@dimen/height22" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

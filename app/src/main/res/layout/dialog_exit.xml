@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="160dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/de_tv_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:text="@string/exit_group"
+            android:textSize="@dimen/height18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/de_tv_is_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/de_tv_exit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:text="确定退出当前账号吗？"
+            android:textSize="@dimen/height18"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/de_view_exit"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/de_tv_is_exit"
+            android:layout_marginTop="22dp"
+            android:background="@color/colorLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/de_view_exit"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/de_btn_sure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/de_btn_exit_bg"
+                android:text="@string/dl_ok"
+                android:textColor="@color/colorForgetPwdNormal"
+                android:textSize="@dimen/height18" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorLine" />
+
+            <Button
+                android:id="@+id/de_btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/de_btn_exit_bg"
+                android:text="@string/dl_cancel"
+                android:textColor="@color/btnLoginGreenNormal"
+                android:textSize="@dimen/height18" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

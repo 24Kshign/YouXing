@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@mipmap/fs_rv_top_middle_bg"
+    android:paddingLeft="84dp"
+    android:paddingRight="58dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/vs_et_want_place"
+            android:layout_width="@dimen/height0"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/am_et_bg"
+            android:ellipsize="end"
+            android:hint="输入您想去的地方"
+            android:paddingLeft="@dimen/height8"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/vs_btn_city_and_search"
+            android:layout_width="@dimen/height0"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="2"
+            android:text="杭州"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/height16"
+            android:textStyle="bold"
+            android:background="@drawable/am_ib_location_bg"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</RelativeLayout>

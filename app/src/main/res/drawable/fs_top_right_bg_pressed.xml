@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 连框颜色值 -->
+    <item>
+        <shape>
+            <corners
+                android:radius="@dimen/height12"
+                android:topLeftRadius="@dimen/height0"
+                android:bottomLeftRadius="@dimen/height0" />
+            <solid android:color="@color/top_frame" />
+        </shape>
+    </item>
+    <!-- 主体背景颜色值 -->
+    <item
+        android:top="1dp"
+        android:bottom="1dp"
+        android:right="1dp">
+        <shape>
+            <corners
+                android:radius="@dimen/height12"
+                android:topLeftRadius="@dimen/height0"
+                android:bottomLeftRadius="@dimen/height0" />
+            <solid android:color="@color/btnLoginGreenNormal" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--登陆界面-->
+    <color name="btnLoginGreenDisable">#818181</color>
+    <color name="btnLoginGreenNormal">#7cb324</color>
+    <color name="btnLoginGreenPressed">#548321</color>
+    <color name="colorLine">#a0a0a0</color>
+    <color name="colorArFram">#f2f0f0</color>
+    <color name="colorForgetPwdPressed">#126088</color>
+    <color name="colorForgetPwdNormal">#0b8cce</color>
+    <color name="colorAmFram">#dcdcdc</color>
+    <color name="colorNickName">#fed635</color>
+    <color name="btnExitNormal">#ff2222</color>
+    <color name="btnExitPressed">#b12323</color>
+    <color name="top_frame">#a2a2a2</color>
+    <color name="colorRvPressed">#dfdede</color>
+    <color name="colorCirclr">#ececec</color>
+    <color name="colorInfoSettingWord">#868686</color>
+    <color name="colorMessegeSettingLine">#d6d6d6</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="bg_gray">#e1e1e1</color>
+    <color name="deep_gray">#394257</color>
+    <color name="border_gray">#d9dfe5</color>
+    <color name="publish_word">#9b9b9b</color>
+    <color name="color_publish_et_bg">#f4f4f4</color>
+    <color name="color_location_bg">#ebebeb</color>
+    <color name="color_location_word">#c9c9c9</color>
+    <color name="color_wheel">#E9E9E9</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="orange">#FFA500</color>
+    <color name="top_bar_normal_bg">#00acff</color>
+</resources>

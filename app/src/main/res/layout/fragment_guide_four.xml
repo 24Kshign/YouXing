@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/iv_guide4">
+
+    <Button
+        android:id="@+id/fgf_btn_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:paddingTop="@dimen/height10"
+        android:paddingBottom="@dimen/height10"
+        android:paddingLeft="@dimen/height30"
+        android:textColor="@color/btnLoginGreenNormal"
+        android:paddingRight="@dimen/height30"
+        android:background="@android:color/white"
+        android:layout_marginBottom="@dimen/height40"
+        android:layout_alignParentBottom="true"
+        android:text="开始悠行" />
+
+</RelativeLayout>

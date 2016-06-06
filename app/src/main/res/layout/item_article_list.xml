@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/height8">
+
+        <RelativeLayout
+            android:id="@+id/ial_rv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ial_iv_head"
+                android:layout_width="@dimen/height36"
+                android:layout_height="@dimen/height36"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone" />
+
+            <com.share.jack.widget.RoundImageView
+                android:id="@+id/ial_riv_head"
+                android:layout_width="@dimen/height36"
+                android:layout_height="@dimen/height36" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ial_rv_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height8"
+            android:layout_toRightOf="@+id/ial_rv_head">
+
+            <TextView
+                android:id="@+id/ial_tv_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="回复"
+                android:textColor="@drawable/text_bg"
+                android:textSize="@dimen/height18" />
+
+            <TextView
+                android:id="@+id/ial_tv_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/height8"
+                android:layout_toLeftOf="@+id/ial_tv_reply"
+                android:singleLine="true"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ial_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ial_rv_top"
+            android:layout_marginLeft="@dimen/height8"
+            android:layout_marginTop="@dimen/height8"
+            android:layout_toRightOf="@+id/ial_rv_head"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ial_tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/height8"
+        android:paddingRight="@dimen/height8"
+        android:textSize="@dimen/height16" />
+
+    <com.share.jack.widget.MyNoScrollListView
+        android:id="@+id/ial_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null" />
+
+</LinearLayout>
